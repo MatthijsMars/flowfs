@@ -1,0 +1,16 @@
+*__pycache__/
+.ipynb_checkpoints
+*.pyc
+flowfs.egg-info/
+data/
+plots/
+results/
+.pytest_cache/
+.vscode/
+*.fits
+*.png
+*.npy
+*.mp4
+cacao-calib/
+build/
+conf/

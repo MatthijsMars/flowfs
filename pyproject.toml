@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flowfs"
+version = "0.1.0"
+description = "FLOWFS simulator"
+authors = [{ name = "Matthijs Mars" }]
+requires-python = ">=3.12"
+dependencies = [
+    "fixr",
+    "hcipy",
+    "matplotlib",
+    "numpy",
+    "scipy",
+    "tqdm",
+    "astropy",
+    "pandas",
+]
+
+[project.optional-dependencies]
+dev = ["fpdf", "pytest"]
+
+[tool.setuptools.packages.find]
+include = ["flowfs", "flowfs.*"]
